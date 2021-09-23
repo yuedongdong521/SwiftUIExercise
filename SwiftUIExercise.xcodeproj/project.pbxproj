@@ -10,6 +10,13 @@
 		8401BB99251D85BD00C6B3CE /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401BB98251D85BD00C6B3CE /* DebugView.swift */; };
 		8401BB9E251D87AE00C6B3CE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401BB9D251D87AE00C6B3CE /* MainView.swift */; };
 		8401BBA3251DBD8100C6B3CE /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401BBA2251DBD8100C6B3CE /* ListView.swift */; };
+		841AAA1726F095B70004A5EB /* TestUILayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AAA1626F095B70004A5EB /* TestUILayout.swift */; };
+		841AAA1C26F0C9840004A5EB /* TabBarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AAA1B26F0C9840004A5EB /* TabBarState.swift */; };
+		841AAB0D26F1D2B60004A5EB /* CustomRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AAB0C26F1D2B60004A5EB /* CustomRootViewController.swift */; };
+		841AAF8E26F221E60004A5EB /* UIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AAF8D26F221E50004A5EB /* UIConstant.swift */; };
+		841AB3D026FAFE770004A5EB /* SwiftGrammarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB3CF26FAFE770004A5EB /* SwiftGrammarView.swift */; };
+		841AB3D826FB06310004A5EB /* SwiftCurrying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB3D726FB06310004A5EB /* SwiftCurrying.swift */; };
+		841AB3DD26FB19740004A5EB /* SwiftSequenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB3DC26FB19740004A5EB /* SwiftSequenceView.swift */; };
 		842DFE062553A1BA00063BE2 /* WithAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842DFE052553A1BA00063BE2 /* WithAnimation.swift */; };
 		84384291253D674D00C4E7C4 /* RefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84384290253D674D00C4E7C4 /* RefreshView.swift */; };
 		84419DFE2542BDEE0096D07E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84419DFD2542BDEE0096D07E /* LoadingView.swift */; };
@@ -61,6 +68,14 @@
 		8401BB98251D85BD00C6B3CE /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		8401BB9D251D87AE00C6B3CE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8401BBA2251DBD8100C6B3CE /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		841AAA1626F095B70004A5EB /* TestUILayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUILayout.swift; sourceTree = "<group>"; };
+		841AAA1B26F0C9840004A5EB /* TabBarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarState.swift; sourceTree = "<group>"; };
+		841AAB0C26F1D2B60004A5EB /* CustomRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRootViewController.swift; sourceTree = "<group>"; };
+		841AAF8D26F221E50004A5EB /* UIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstant.swift; sourceTree = "<group>"; };
+		841AAF9226F2F88E0004A5EB /* SwiftUIExercise.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIExercise.entitlements; sourceTree = "<group>"; };
+		841AB3CF26FAFE770004A5EB /* SwiftGrammarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGrammarView.swift; sourceTree = "<group>"; };
+		841AB3D726FB06310004A5EB /* SwiftCurrying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCurrying.swift; sourceTree = "<group>"; };
+		841AB3DC26FB19740004A5EB /* SwiftSequenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSequenceView.swift; sourceTree = "<group>"; };
 		842DFE052553A1BA00063BE2 /* WithAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithAnimation.swift; sourceTree = "<group>"; };
 		84384290253D674D00C4E7C4 /* RefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshView.swift; sourceTree = "<group>"; };
 		84419DFD2542BDEE0096D07E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -122,6 +137,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		841AB3CE26FAFE260004A5EB /* SwiftGrammar */ = {
+			isa = PBXGroup;
+			children = (
+				841AB3CF26FAFE770004A5EB /* SwiftGrammarView.swift */,
+				841AB3D726FB06310004A5EB /* SwiftCurrying.swift */,
+				841AB3DC26FB19740004A5EB /* SwiftSequenceView.swift */,
+			);
+			path = SwiftGrammar;
+			sourceTree = "<group>";
+		};
 		8438428D253D63AE00C4E7C4 /* list */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				847909BB252060D0006438F2 /* TabBarView.swift */,
+				841AAA1B26F0C9840004A5EB /* TabBarState.swift */,
 			);
 			path = tabBar;
 			sourceTree = "<group>";
@@ -177,6 +203,8 @@
 		84737E4E24A8BB40006468C5 /* SwiftUIExercise */ = {
 			isa = PBXGroup;
 			children = (
+				841AB3CE26FAFE260004A5EB /* SwiftGrammar */,
+				841AAF9226F2F88E0004A5EB /* SwiftUIExercise.entitlements */,
 				847FFA08255149050083CBEA /* 动画 */,
 				84D85518254849E60020B1C2 /* 布局 */,
 				8480AC752547C150004A7D0A /* 传值 */,
@@ -187,9 +215,11 @@
 				84737E5124A8BB40006468C5 /* SceneDelegate.swift */,
 				84737E5324A8BB40006468C5 /* ContentView.swift */,
 				8401BB9D251D87AE00C6B3CE /* MainView.swift */,
+				841AAB0C26F1D2B60004A5EB /* CustomRootViewController.swift */,
 				847909C0252063D8006438F2 /* HomeView.swift */,
 				847909C5252063EF006438F2 /* MessageView.swift */,
 				847909CA2520640B006438F2 /* SettingView.swift */,
+				841AAF8D26F221E50004A5EB /* UIConstant.swift */,
 				8401BB98251D85BD00C6B3CE /* DebugView.swift */,
 				84737E5524A8BB43006468C5 /* Assets.xcassets */,
 				84737E5A24A8BB43006468C5 /* LaunchScreen.storyboard */,
@@ -297,6 +327,7 @@
 				84D85521254906B80020B1C2 /* Path_ShapeLayout.swift */,
 				84954078254BC164003D8641 /* Stack_Layout.swift */,
 				847FFA03255005610083CBEA /* GeometryLayout.swift */,
+				841AAA1626F095B70004A5EB /* TestUILayout.swift */,
 			);
 			path = "布局";
 			sourceTree = "<group>";
@@ -441,20 +472,27 @@
 				847909BC252060D0006438F2 /* TabBarView.swift in Sources */,
 				8480AC6525466A5C004A7D0A /* Environment_Values.swift in Sources */,
 				842DFE062553A1BA00063BE2 /* WithAnimation.swift in Sources */,
+				841AB3D026FAFE770004A5EB /* SwiftGrammarView.swift in Sources */,
 				84D85522254906B80020B1C2 /* Path_ShapeLayout.swift in Sources */,
+				841AAA1726F095B70004A5EB /* TestUILayout.swift in Sources */,
 				847909C6252063EF006438F2 /* MessageView.swift in Sources */,
 				8401BBA3251DBD8100C6B3CE /* ListView.swift in Sources */,
+				841AB3D826FB06310004A5EB /* SwiftCurrying.swift in Sources */,
 				84384291253D674D00C4E7C4 /* RefreshView.swift in Sources */,
 				847FF9FD254FEC7A0083CBEA /* FoldHStackView.swift in Sources */,
 				84419DFE2542BDEE0096D07E /* LoadingView.swift in Sources */,
 				84737E5224A8BB40006468C5 /* SceneDelegate.swift in Sources */,
+				841AB3DD26FB19740004A5EB /* SwiftSequenceView.swift in Sources */,
 				8480AC812547C2F0004A7D0A /* Preferences_Test.swift in Sources */,
 				847FFA0A255149450083CBEA /* AnimationView.swift in Sources */,
 				84D8551A25484AD70020B1C2 /* ViewLayout.swift in Sources */,
 				847FFA04255005610083CBEA /* GeometryLayout.swift in Sources */,
+				841AAA1C26F0C9840004A5EB /* TabBarState.swift in Sources */,
 				84ADD67C25405EB400AF4EE7 /* CustomObservedObject.swift in Sources */,
+				841AAF8E26F221E60004A5EB /* UIConstant.swift in Sources */,
 				847909C1252063D8006438F2 /* HomeView.swift in Sources */,
 				8401BB9E251D87AE00C6B3CE /* MainView.swift in Sources */,
+				841AAB0D26F1D2B60004A5EB /* CustomRootViewController.swift in Sources */,
 				847909D1252077A0006438F2 /* JumpView.swift in Sources */,
 				847FF9F8254FD5100083CBEA /* ViewLayoutGroup.swift in Sources */,
 				84737E5424A8BB40006468C5 /* ContentView.swift in Sources */,
@@ -624,6 +662,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIExercise/SwiftUIExercise.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIExercise/Preview Content\"";
 				DEVELOPMENT_TEAM = 8F7D4C878S;
@@ -635,6 +674,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ydd.test.Swift----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -644,6 +684,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIExercise/SwiftUIExercise.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIExercise/Preview Content\"";
 				DEVELOPMENT_TEAM = 8F7D4C878S;
@@ -655,6 +696,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ydd.test.Swift----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

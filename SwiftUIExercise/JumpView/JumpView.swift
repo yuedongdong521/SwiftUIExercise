@@ -70,7 +70,9 @@ struct JumpView: View {
             })
             
             Spacer()
-        })
+        }).onAppear {
+            
+        }
     }
 }
 

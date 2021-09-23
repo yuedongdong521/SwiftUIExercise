@@ -40,10 +40,12 @@ struct MineModel {
 }
 
 enum ItemEnum: Int {
-    case def, ContentView, ListView, JumpView, RefreshView, CustomObservedObject, PhototsObservedObj, Environment_Values, Environment_Object, Preferences_Test, ViewLayout, Path_ShapeLayout, Stack_Layout, ViewLayoutGroup, AnimationView, WithAnimation
+    case def, Grammar, ContentView, ListView, JumpView, RefreshView, CustomObservedObject, PhototsObservedObj, Environment_Values, Environment_Object, Preferences_Test, ViewLayout, Path_ShapeLayout, Stack_Layout, ViewLayoutGroup, AnimationView, WithAnimation, TestUILayout
     
     func mineModel() -> MineModel {
         switch self {
+        case .Grammar:
+            return MineModel(title: "Swift语法", content: "Swift语法", des: "Swift语法", type: self)
         case .ContentView:
             return MineModel(title: "添加计数状态", content: "技术属性", des: "", type: self)
         case .ListView:
@@ -74,6 +76,8 @@ enum ItemEnum: Int {
             return MineModel(title: "AnimationView", content: "View隐式动画", des: "", type: self)
         case .WithAnimation:
             return MineModel(title: "WithAnimation", content: "View显示动画", des: "", type: self)
+        case .TestUILayout:
+            return MineModel(title: "TestUILayout", content: "测试SwiftUI布局", des: "测试SwiftUI布局", type: self)
         default:
             return MineModel()
         }
@@ -82,24 +86,23 @@ enum ItemEnum: Int {
 
 struct MainView: View {
     
-    @State var items:[ItemEnum] = [.ContentView, .ListView, .JumpView, .RefreshView, .CustomObservedObject, .PhototsObservedObj, .Environment_Values, .Environment_Object, .Preferences_Test, .ViewLayout, .Path_ShapeLayout, .Stack_Layout, .ViewLayoutGroup, .AnimationView, .WithAnimation]
+    @State var items:[ItemEnum] = [.Grammar, .ContentView, .ListView, .JumpView, .RefreshView, .CustomObservedObject, .PhototsObservedObj, .Environment_Values, .Environment_Object, .Preferences_Test, .ViewLayout, .Path_ShapeLayout, .Stack_Layout, .ViewLayoutGroup, .AnimationView, .WithAnimation, .TestUILayout]
     
     
     var body: some View {
-        NavigationView {
+        List {
+            ForEach.init(items, id: \.self) { item in
+                let model = item.mineModel()
+                cellForItem(model: model)
+            }
             
-            List {
-                ForEach.init(items, id: \.self) { item in
-                    let model = item.mineModel()
-                    cellForItem(model: model)
-                }
-                
-            }.background(Color.gray)
-            .listStyle(GroupedListStyle())
-            .navigationBarTitle("main", displayMode: .automatic)
+        }.background(Color.gray)
+        .listStyle(GroupedListStyle())
+        .onAppear {
             
-        }.background(Color.black)
-        
+        }
+        .navigationBarHidden(true)
+        .navigationBarTitle(Text(""))
     }
     
     func cellForItem(model: MineModel) -> some View {
@@ -114,6 +117,8 @@ struct MainView: View {
     
     func createItemView(model: MineModel) -> AnyView {
         switch model.type {
+        case .Grammar:
+            return AnyView(SwiftGrammarView())
         case .ContentView:
             return AnyView(ContentView())
         case .ListView:
@@ -144,6 +149,8 @@ struct MainView: View {
             return AnyView(AnimationView())
         case .WithAnimation:
             return AnyView(WithAnimation())
+        case .TestUILayout:
+            return AnyView(TestUILayout())
         default:
             return AnyView(Text("default"))
         }

@@ -9,7 +9,7 @@
 import SwiftUI
 
 extension View {
-    
+    @discardableResult
     func debug_des(_ msg: String = "", fileName file: String = #file, fucName fuc: String = #function, lineNum line: Int = #line) -> Self {
         let date = Date()
         let fileNames = file.components(separatedBy: CharacterSet.init(charactersIn: "/"))
@@ -19,6 +19,7 @@ extension View {
         return self
     }
     
+    @discardableResult
     func debug(_ msg: String = "", fileName file: String = #file, fucName fuc: String = #function, lineNum line: Int = #line) -> Self {
         let date = Date()
         let fileNames = file.components(separatedBy: CharacterSet.init(charactersIn: "/"))
